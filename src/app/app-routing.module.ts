@@ -5,7 +5,9 @@ import { PersonaCardComponent } from './persona-card/persona-card.component';
 
 const routes: Routes = [
   {path:'home', component: HomeComponent},
-  {path:'', component:PersonaCardComponent},
+  {path:'', redirectTo:'home', pathMatch:'full'},
+  {path:'**', redirectTo:'home', pathMatch:'full'},
+
 ];
 
 @NgModule({

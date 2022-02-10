@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-persona-card',
@@ -6,12 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./persona-card.component.scss'],
 })
 export class PersonaCardComponent implements OnInit {
-  persona: any = { nombre: 'pepita', apellido: 'la pistolera' };
+  @Input() personas: any[] = [];
+  @Input() titulo: string;
 
   constructor() {}
 
-  ngOnInit(): void {
-    console.log(this.persona);
-    console.log(this.persona.nombre);
-  }
+  ngOnInit(): void {}
 }

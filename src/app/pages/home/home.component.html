@@ -3,11 +3,11 @@
 
     <input placeholder="Apellido" class="form-control mt-4" [(ngModel)]="apellido" type="text" />
 
-    <button class="btn btn-success mt-4 boton-enviar" (click)="enviar()">Enviar</button>
-
-
+    <button class="btn btn-success mt-4 boton-enviar" (click)="enviar()">
+    Enviar
+  </button>
 </div>
 
-<div class="container mt-4 caja">
-    <app-persona-card class="mt-4"></app-persona-card>
+<div class="container mt-4 mb-4" *ngIf="personasData.length > 0">
+    <app-persona-card [personas]="personasData" [titulo]="'Lista de Personas'"></app-persona-card>
 </div>

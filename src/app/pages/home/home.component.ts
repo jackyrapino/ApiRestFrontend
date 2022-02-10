@@ -9,10 +9,11 @@ export class HomeComponent {
   nombre: string = '';
   apellido: string = '';
 
- 
+  personasData: any[] = [];
+
   constructor() {}
 
   enviar() {
-    alert(this.nombre + ' ' + this.apellido);
+    this.personasData.push({ nombre: this.nombre, apellido: this.apellido });
   }
 }
