@@ -1,22 +1,24 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './pages/home/home.component';
-import { AltaComponent } from './pages/alta/alta.component';
-import { ListadoComponent } from './pages/listado/listado.component';
+import { PersonaCardComponent } from './persona-card/persona-card.component';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AltaComponent,
-    ListadoComponent
+    PersonaCardComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,1 +1,13 @@
-<p>home works!</p>
+<div class="container mt-4 caja">
+    <input placeholder="Nombre" class="form-control" [(ngModel)]="nombre" type="text" />
+
+    <input placeholder="Apellido" class="form-control mt-4" [(ngModel)]="apellido" type="text" />
+
+    <button class="btn btn-success mt-4 boton-enviar" (click)="enviar()">Enviar</button>
+
+
+</div>
+
+<div class="container mt-4 caja">
+    <app-persona-card class="mt-4"></app-persona-card>
+</div>
